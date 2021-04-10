@@ -1,0 +1,89 @@
+/* TODO: move to SASS*/
+
+html {
+    height: 100%; 
+}
+
+body {
+    background-image: url("img/tile.png");
+    background-repeat: repeat;
+    background-size: 15em;
+
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*footer to be aligned to bottom 
+footer {
+    color: white; 
+}*/
+
+body .content {
+    color: white; 
+    text-align: left;
+}
+
+body .content .details .text #name {
+    font-size: 24pt;
+}
+
+body .content .details .text #tagline {
+    font-size: 12pt;
+    font-weight: normal;
+
+    margin-top: 0.3em; 
+}
+
+body .content .details .text #email {
+    font-size: 10pt;
+    font-weight: normal;
+
+    font-style: italic;
+    text-decoration: underline;
+
+    margin-top: 0.3em; 
+}
+
+body .content .details .text #email a{
+    color: white;
+}
+
+body .content .details .text #social img {
+    margin-top: 1em; 
+
+    width: 2em;
+    height: 2em;
+}
+
+body .content .details .icon img {
+    width: 7em;
+    object-fit: cover;
+
+    padding-right: 1em;
+}
+
+::-moz-selection {
+    color: white;
+    background: #2ca0e1; 
+}
+
+::selection {
+    color: white;
+    background: #2ca0e1; 
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        transform: translateY(-50%);
+    }
+}    
