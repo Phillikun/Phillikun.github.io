@@ -1,5 +1,6 @@
 /* TODO: move to SASS*/
 
+/* Might not be needed anymore because body has min-height of 100vh */
 html {
     height: 100%; 
 }
@@ -9,21 +10,20 @@ body {
     background-repeat: repeat;
     background-size: 15em;
 
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    min-height: 100vh;
+    display: flex; /* Required for centering */
+    justify-content: center; /* Horizontal center */
+    align-items: center; /* Vertical center */
 
     font-family: 'Roboto', sans-serif;
 }
 
-
-/*footer to be aligned to bottom 
 footer {
-    color: white; 
-}*/
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
 
 body .content {
     color: white; 
@@ -80,10 +80,7 @@ body .content .details .icon img {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        position: absolute;
-        top: 30%;
-        left: 10%;
-        transform: translateY(-50%);
+    .content {
+        transform: translateY(-20vh);
     }
-}    
+}
