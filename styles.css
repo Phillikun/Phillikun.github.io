@@ -16,13 +16,15 @@ body {
     justify-content: center; /* Horizontal center */
     align-items: center; /* Vertical center */
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 footer {
-    color: white;
+    color: #696969;
     position: absolute;
     bottom: 0;
+
+    font-size: 8pt; 
 }
 
 body .content {
