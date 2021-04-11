@@ -59,16 +59,12 @@ body .content .details .text #email a{
 
 body .content .details .text #social {
     margin-top: 0.8em;
-
-    /* Move to the left to compensate for the left and right margins in each
-     * link */
-    transform: translateX(-4px);
 }
 
 body .content .details .text #social a {
     font-size: 24pt;
     color: white;
-    margin: 0 4px 0 4px;
+    margin-right: 0.25em;
 }
 
 body .content .details .icon img {
