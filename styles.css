@@ -57,11 +57,18 @@ body .content .details .text #email a{
     color: white;
 }
 
-body .content .details .text #social img {
-    margin-top: 1em; 
+body .content .details .text #social {
+    margin-top: 0.8em;
 
-    width: 2em;
-    height: 2em;
+    /* Move to the left to compensate for the left and right margins in each
+     * link */
+    transform: translateX(-4px);
+}
+
+body .content .details .text #social a {
+    font-size: 24pt;
+    color: white;
+    margin: 0 4px 0 4px;
 }
 
 body .content .details .icon img {
