@@ -105,3 +105,13 @@ body .content .details .icon img {
         transform: translateY(-20vh);
     }
 }
+
+@media only screen and (prefers-reduced-motion: reduce) {
+    #showreel-container {
+        display: none !important;
+    }
+
+    #showreel-video {
+        display: none !important;
+    }
+}
